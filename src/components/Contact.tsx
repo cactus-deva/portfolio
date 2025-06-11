@@ -20,8 +20,8 @@ export const Contact = () => {
 
     emailjs
       .send(
-        "service_kxgqag8",    
-        "template_7y3ho88",  
+        "service_43jg2h5",    
+        "template_7o8jl19",  
         {...formData},
         "6DIU29r_7C2eR9KTi"    
       )

@@ -9,6 +9,9 @@ import About from "./components/About";
 import {Contact} from "./components/Contact";
 import { Hero } from "./components/Hero";
 import { Home } from "./components/Home";
+import { DogHotelPage } from "./pages/DogHotelPage";
+import { QuoteCollectionPage } from "./pages/QuoteCollectionPage";
+import { PortfolioPage } from "./pages/PortfolioPage";
 
 function App() {
   useEffect(() => {
@@ -26,6 +29,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/dogHotel" element={<DogHotelPage />} />
+        <Route path="/quoteCollection" element={<QuoteCollectionPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
       </Route>
     </Routes>
   );

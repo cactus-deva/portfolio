@@ -20,7 +20,7 @@ export const Projects = () => {
     },
     {
       src: quoteCollectionPhoto,
-      paht: '/quoteCollection',
+      path: '/quoteCollection',
       project: "Quote Collection",
       details: "Quote Collection is a simple web app for creating, editing, and organizing personal quotes — built to explore CRUD operations and client-server interaction. This is one of my earliest projects — it helped me learn about data flow between frontend and backend. I’m now redesigning the UI to match what I’ve learned since then.",
     },
@@ -40,7 +40,7 @@ export const Projects = () => {
             <ProjectCard
               key={index}
               src={project.src}
-              path={project.paht || "/"}
+              path={project.path || ""}
               project={project.project}
               details={project.details}
             />
