@@ -1,10 +1,10 @@
 
 
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 export const SocialLinks = () => {
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed z-40">
+    <div className="hidden lg:flex flex-col top-[40%] left-0 fixed z-40">
       <ul>
         <li className="w-40 h-12 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800 text-white rounded-r-md">
           <a
@@ -30,10 +30,10 @@ export const SocialLinks = () => {
 
         <li className="w-40 h-12 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-purple-600 text-white rounded-r-md">
           <a
-            href="mailto:esther.mothanaprakoon@gmail.com"
+            href="https://www.facebook.com/ster.mothanaprakoon/"
             className="flex justify-between items-center w-full px-4"
           >
-            Email <FaEnvelope size={25} />
+            Facebook <FaFacebook size={25} />
           </a>
         </li>
       </ul>

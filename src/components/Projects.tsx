@@ -25,8 +25,9 @@ export const Projects = () => {
       details: "Quote Collection is a simple web app for creating, editing, and organizing personal quotes — built to explore CRUD operations and client-server interaction. This is one of my earliest projects — it helped me learn about data flow between frontend and backend. I’m now redesigning the UI to match what I’ve learned since then.",
     },
   ];
+ 
   return (
-    <main className="flex flex-col items-center justify-around min-h-screen m-20">
+    <main className="flex flex-col items-center justify-around min-h-screen m-20" data-aos="fade-up">
       <div className="flex flex-col items-center justify-between h-30 max-w-150 text-center">
         <h1 className="text-4xl font-bold">PROJECTS</h1>
         <span>

@@ -35,10 +35,10 @@ export const Contact = () => {
       });
   };
 
-
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-evenly"
+      data-aos="fade-up"
       style={{
         backgroundImage: `url(${contactPhoto})`,
         backgroundSize: "cover",

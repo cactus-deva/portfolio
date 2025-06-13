@@ -11,12 +11,12 @@ export const About = () => {
     "SQL",
     "Node.js",
     "Express.js",
-    " Responnsive Design",
+    "Responnsive Design",
   ];
   return (
     <main
       className="flex flex-col items-center justify-evenly min-w-screen min-h-screen"
-      data-aos="fade-in"
+      data-aos="fade-up"
       style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
     >
       <div className="flex flex-col justify-between items-center w-1/2 max-w-xl text-center mt-20">

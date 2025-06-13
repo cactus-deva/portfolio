@@ -1,9 +1,8 @@
-// src/pages/ProjectDetail.tsx
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import dogHotel from "../assets/dogHotel.png";
 import background from "../assets/sparkle-bg.png";
 import { Button } from "../components/Button";
-import { Link } from "react-router-dom";
 
 export const DogHotelPage = () => {
   return (

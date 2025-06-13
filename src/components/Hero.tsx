@@ -3,6 +3,7 @@ import heroBg from "../assets/hero-bg.png";
 import { Button } from "./Button";
 
 export const Hero = () => {
+
   return (
     <main
       data-aos="fade-up"
@@ -16,9 +17,8 @@ export const Hero = () => {
           Applications that leads to the success of the overall product
         </p>
         <Link to='/projects'>
-        <Button>PROJECTS</Button>
+        <Button padding="py-3 px-10">PROJECTS</Button>
         </Link>
-        
       </div>
     </main>
   );
