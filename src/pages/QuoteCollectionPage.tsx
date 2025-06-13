@@ -1,4 +1,4 @@
-// src/pages/ProjectDetail.tsx
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import quoteCollection from "../assets/quoteCollection.png";
 import background from "../assets/sparkle-bg.png";

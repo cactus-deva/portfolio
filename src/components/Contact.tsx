@@ -1,7 +1,7 @@
 import { useState } from "react";
 import contactPhoto from "../assets/sparkle-bg.png";
 import { Button } from "./Button";
-import emailjs from "emailjs-com"
+import emailjs from '@emailjs/browser'
 
 interface FormData {
   name: string;
@@ -29,7 +29,7 @@ export const Contact = () => {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch((error) => {
+      .catch((error:unknown) => {
         console.error("FAILED...", error);
         alert("Oops! Failed to send message.");
       });
