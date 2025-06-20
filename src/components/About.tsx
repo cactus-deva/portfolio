@@ -11,25 +11,26 @@ export const About = () => {
     "SQL",
     "Node.js",
     "Express.js",
-    "Responnsive Design",
   ];
   return (
     <main
-      className="flex flex-col items-center justify-evenly min-w-screen min-h-screen"
+      className="flex flex-col items-center min-w-screen min-h-screen"
       data-aos="fade-up"
       style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
     >
       <div className="flex flex-col justify-between items-center w-1/2 max-w-xl text-center mt-20">
-        <h1 className="font-bold text-4xl my-10">ABOUT ME</h1>
-        <span className="text-lg">
+        <h1 className="font-bold text-xl md:text-4xl my-10">ABOUT ME</h1>
+        <span className="text-sm md:text-lg">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology
         </span>
       </div>
-      <div className="flex p-20">
+      <div className="flex p-3 md:p-20">
         <div className="flex flex-col flex-1 items-start m-4">
-          <h2 className="text-2xl font-bold my-2">Get to know me!</h2>
-          <div className="mb-5">
+          <h2 className="text-md md:text-2xl font-bold my-2">
+            Get to know me!
+          </h2>
+          <div className="mb-5 text-xs md:text-lg">
             I'm a
             <strong className="font-semibold"> Frontend Web Developer </strong>
             building and managing the Front-end of Websites and Web Applications
@@ -48,17 +49,23 @@ export const About = () => {
             grow. If you have a good opportunity that matches my skills and
             experience then don't hesitate to contact me.
           </div>
-          <Link to='/contact'>
-           <Button>CONTACT</Button>
+          <Link to="/contact">
+            <Button padding="p-2" text="text-white text-xs md:text-lg">
+              CONTACT
+            </Button>
           </Link>
-
         </div>
-        <div className="flex flex-col flex-1 m-4 items-start">
-          <h2 className="text-2xl font-bold my-4">My Skills</h2>
+        <div className="flex flex-col flex-1 m-4 items-start justify-baseline">
+          <h2 className="text-md md:text-2xl font-bold my-2">My Skills</h2>
           <div className="text-sm grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 font-semibold auto-rows-fr break-normal">
             {mySkill.map((skill, index) => {
               return (
-                <Button key={index} bgColor="bg-gray-100" text="black">
+                <Button
+                  key={index}
+                  bgColor="bg-gray-100"
+                  text="text-black text-xs md:text-lg"
+                  padding="p-2"
+                >
                   {skill}
                 </Button>
               );

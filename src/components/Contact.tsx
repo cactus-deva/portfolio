@@ -45,16 +45,16 @@ export const Contact = () => {
       }}
     >
       <div className="flex flex-col justify-between items-center h-30 max-w-150 text-center mt-30">
-        <h1 className="text-4xl font-bold">CONTACT</h1>
-        <span>
+        <h1 className="text-lg md:text-4xl font-bold">CONTACT</h1>
+        <span className="text-xs md:text-md p-10">
           Feel free to Contact me by submitting the form below and I will get
           back to you as soon as possible
         </span>
       </div>
       <form 
       onSubmit={handleOnSubmit}
-      className="flex flex-col bg-gray-100 min-w-3xl p-4 rounded-md my-20">
-        <div className="flex flex-col m-4">
+      className="flex flex-col bg-gray-100 w-2/3 p-4 rounded-md my-20 mx-auto text-xs md:text-md">
+        <div className="flex flex-col m-1 md:m-4">
           <label htmlFor="name" className="my-2">
             Name
           </label>
@@ -69,7 +69,7 @@ export const Contact = () => {
             className="bg-gray-200 w-full rounded-md h-10 p-2"
           />
         </div>
-        <div className="flex flex-col m-4">
+        <div className="flex flex-col m-1 md:m-4">
           <label htmlFor="email" className="my-2">
             Email
           </label>
@@ -84,7 +84,7 @@ export const Contact = () => {
             className="bg-gray-200 w-full rounded-md h-10 p-2"
           />
         </div>
-        <div className="flex flex-col m-4">
+        <div className="flex flex-col m-1 md:m-4">
           <label htmlFor="message" className="my-2">
             Message
           </label>
@@ -98,8 +98,8 @@ export const Contact = () => {
             className="bg-gray-200 w-full rounded-md h-50 p-2 resize-none"
           />
         </div>
-        <div className="flex justify-end m-4">
-          <Button type="submit" padding="py-3 px-15">SUBMIT</Button>
+        <div className="flex justify-end m-1 md:m-4">
+          <Button type="submit" padding="py-2 md:py-3 px-5 md:px-15">SUBMIT</Button>
         </div>
       </form>
     </main>

@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
         <h1 className="hidden sm:block mx-2">ESTHER MOTHANAPRAKOON</h1>
       </div>
-      <div className="flex justify-around w-1/2">
+      <div className="flex justify-around w-full md:w-1/2 text-xs md:text-lg">
         <Link to={"/"}>HOME</Link>
         <Link to={"/projects"}>PROJECTS</Link>
         <Link to={"/about"}>ABOUT</Link>
