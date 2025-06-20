@@ -15,8 +15,8 @@ export const Header = () => {
       </div>
       <div className="flex justify-around w-full md:w-1/2 text-xs md:text-lg">
         <Link to={"/"}>HOME</Link>
+         <Link to={"/about"}>ABOUT</Link>
         <Link to={"/projects"}>PROJECTS</Link>
-        <Link to={"/about"}>ABOUT</Link>
         <Link to={"/contact"}>CONTACT</Link>
       </div>
     </main>

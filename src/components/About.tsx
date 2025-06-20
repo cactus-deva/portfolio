@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import aboutBg from "../assets/sparkle-bg.png";
 import { Button } from "./Button";
 export const About = () => {
   const mySkill = [
@@ -14,9 +13,8 @@ export const About = () => {
   ];
   return (
     <main
-      className="flex flex-col items-center min-w-screen min-h-screen"
+      className="flex flex-col items-center justify-center min-w-screen min-h-screen"
       data-aos="fade-up"
-      style={{ backgroundImage: `url(${aboutBg})`, backgroundSize: "cover" }}
     >
       <div className="flex flex-col justify-between items-center w-1/2 max-w-xl text-center mt-20">
         <h1 className="font-bold text-xl md:text-4xl my-10">ABOUT ME</h1>

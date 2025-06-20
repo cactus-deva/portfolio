@@ -40,7 +40,7 @@ export const ProjectDetailPage = () => {
       />
       <div className="w-2/3 md:w-1/2 m-auto">
         <h1 className="text-lg md:text-2xl font-bold my-5">
-          Project Overview 🐾
+          Project Overview
         </h1>
         <span className="text-sm md:text-md">
           {project.projectOverviewPage}

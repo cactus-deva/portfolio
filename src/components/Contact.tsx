@@ -1,7 +1,5 @@
 import { useState } from "react";
-import contactPhoto from "../assets/sparkle-bg.png";
 import { Button } from "./Button";
-import emailjs from '@emailjs/browser'
 
 interface FormData {
   name: string;
@@ -14,46 +12,36 @@ export const Contact = () => {
     email: "",
     message: "",
   });
-
-  const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  
+  const handleOnSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_43jg2h5",    
-        "template_7o8jl19",  
-        {...formData},
-        "6DIU29r_7C2eR9KTi"    
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch((error:unknown) => {
-        console.error("FAILED...", error);
-        alert("Oops! Failed to send message.");
-      });
+    if (!formData.name || !formData.email || !formData.message) {
+      return window.alert("Please input all fields before submit");
+    }
+    window.alert("Thank you for submit. This is demo website only.")
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    })
   };
 
   return (
     <main
-      className="min-h-screen flex flex-col items-center justify-evenly"
+      className="min-h-screen flex flex-col items-center justify-center"
       data-aos="fade-up"
-      style={{
-        backgroundImage: `url(${contactPhoto})`,
-        backgroundSize: "cover",
-      }}
     >
-      <div className="flex flex-col justify-between items-center h-30 max-w-150 text-center mt-30">
+      <div className="flex flex-col justify-around items-center h-30 max-w-150 text-center mt-30 px-20">
         <h1 className="text-lg md:text-4xl font-bold">CONTACT</h1>
-        <span className="text-xs md:text-md p-10">
+        <span className="text-sm md:text-lg">
           Feel free to Contact me by submitting the form below and I will get
           back to you as soon as possible
         </span>
       </div>
-      <form 
-      onSubmit={handleOnSubmit}
-      className="flex flex-col bg-gray-100 w-2/3 p-4 rounded-md my-20 mx-auto text-xs md:text-md">
+      <form
+        onSubmit={handleOnSubmit}
+        className="flex flex-col bg-gray-100 w-2/3 p-4 rounded-md my-20 mx-auto text-xs md:text-lg"
+      >
         <div className="flex flex-col m-1 md:m-4">
           <label htmlFor="name" className="my-2">
             Name
@@ -98,8 +86,17 @@ export const Contact = () => {
             className="bg-gray-200 w-full rounded-md h-50 p-2 resize-none"
           />
         </div>
+
+        <div className="flex justify-center my-4">
+          <div
+            id="recaptcha-container"
+            className="my-4 mx-auto"
+          ></div>
+        </div>
         <div className="flex justify-end m-1 md:m-4">
-          <Button type="submit" padding="py-2 md:py-3 px-5 md:px-15">SUBMIT</Button>
+          <Button type="submit" padding="py-2 md:py-3 px-5 md:px-15">
+            SUBMIT
+          </Button>
         </div>
       </form>
     </main>

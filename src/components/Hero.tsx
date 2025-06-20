@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroBg from "../assets/hero-bg.png";
+import background from "../assets/background.png";
 import { Button } from "./Button";
 
 export const Hero = () => {
@@ -7,8 +7,8 @@ export const Hero = () => {
   return (
     <main
       data-aos="fade-up"
-      className="flex flex-col items-center min-h-screen w-full"
-      style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover" }}
+      className="flex flex-col items-center justify-center min-h-screen w-full"
+      style={{ backgroundImage: `url(${background})`, backgroundSize: "cover" }}
     >
       <div className="flex flex-col justify-center items-center p-40 text-center">
         <h1 className="text-xl md:text-4xl font-bold">HI, I'M ESTHER MOTHANAPRAKOON</h1>
