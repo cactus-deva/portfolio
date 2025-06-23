@@ -11,7 +11,7 @@ export const ProjectCard = ({ src, project, details, path }: ProjectCardProps) =
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <img src={src} className="h-auto w-auto rounded-lg" />
-      <div className="flex flex-col items-start justify-around px-0 md:px-12 my-3 md:my-0 py-14">
+      <div className="flex flex-col items-start justify-around px-0 md:px-12 my-3 md:my-0 py-4">
         <h2 className="text-sm md:text-lg lg:text-2xl font-bold">{project}</h2>
         <span className="text-xs md:text-md lg:text-lg my-5 md:my-0">{details}</span>
         <Link to={`/projects${path}`}>
