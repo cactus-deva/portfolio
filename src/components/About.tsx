@@ -28,30 +28,25 @@ export const About = () => {
           <h2 className="text-md md:text-2xl font-bold my-2">
             Get to know me!
           </h2>
-          <div className="mb-5 text-xs md:text-lg">
+          <div className="mb-5 text-xs md:text-lg pr-4">
             I'm a
             <strong className="font-semibold"> Frontend Web Developer </strong>
             building and managing the Front-end of Websites and Web Applications
             that leads to the success of the overall product. Check out some of
             my work in the Projects section.
             <br />
-            <br />I also like sharing content related to the stuff that I have
-            learned over the years in
-            <strong className="font-semibold"> Web Development </strong>
-            so it can help other people of the Dev Community. Feel free to
-            Connect or Follow me on my Linkedin and Instagram where I post
-            useful content related to Web Development and Programming
-            <br />
             <br />
             I'm open to Job opportunities where I can contribute, learn and
             grow. If you have a good opportunity that matches my skills and
-            experience then don't hesitate to contact me.
+            experience then don't hesitate to contact me via Facebook or
+            LinkedIn.
           </div>
-          <Link to="/contact">
+
+          {/* <Link to="/contact">
             <Button padding="p-2" text="text-white text-xs md:text-lg">
               CONTACT
             </Button>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col flex-1 m-4 items-start justify-baseline">
           <h2 className="text-md md:text-2xl font-bold my-2">My Skills</h2>

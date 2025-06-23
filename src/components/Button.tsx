@@ -9,6 +9,6 @@ interface ButtonProps {
 export const Button = ({children, bgColor = 'bg-purple-600', text = 'text-white', padding = 'py-2 px-3', type}: ButtonProps) => {
 
     return (
-        <button type={type} className={`${bgColor} ${text} ${padding} rounded-md font-semibold hover:opacity-80 cursor-pointer`}>{children}</button>
+        <button type={type} className={`${bgColor} ${text} ${padding} rounded-md font-semibold hover:opacity-80 cursor-pointer truncate overflow-hidden text-ellipsis`}>{children}</button>
     )
 }
