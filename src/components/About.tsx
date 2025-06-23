@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { Button } from "./Button";
 export const About = () => {
   const mySkill = [
